@@ -369,7 +369,7 @@ public class StorageManager {
 
     private static String getEventDetailsSaveFormat(Event event) {
         String eventDetails;
-        String tagDetails = null;
+        String tagDetails = "";
 
         for (Tag tag: event.getTags()) {
             tagDetails += PREFIX_DELIMITER + PREFIX_TAG + " " + tag.toSaveString() + " ";

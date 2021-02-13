@@ -1,12 +1,15 @@
 package seedu.notus.command;
 
+import seedu.notus.data.exception.SystemException;
 import seedu.notus.data.notebook.Note;
 import seedu.notus.ui.Formatter;
 
 import java.util.ArrayList;
 import java.util.Map;
+import java.io.IOException;
 
 import static seedu.notus.util.CommandMessage.EDIT_NOTE_SUCCESSFUL_MESSAGE;
+import static seedu.notus.util.CommandMessage.FILE_WRITE_UNSUCCESSFUL_MESSAGE;
 import static seedu.notus.util.CommandMessage.INVALID_LINE_UNSUCCESSFUL_MESSAGE;
 import static seedu.notus.util.CommandMessage.NOTE_DOES_NOT_EXIST_MESSAGE;
 import static seedu.notus.util.CommandMessage.SAME_NOTE_TITLE_UNSUCCESSFUL_MESSAGE;
@@ -45,6 +48,9 @@ public class EditNoteCommand extends Command {
         Note oldNote;
         ArrayList<String> content;
 
+        boolean isEditTitle = false;
+        String oldNoteTitle = "";
+
         // Retrieve note
         try {
             oldNote = notebook.getNote(index);
@@ -61,6 +67,8 @@ public class EditNoteCommand extends Command {
             if (notebook.getNote(newNote.getTitle()))  {
                 return Formatter.formatString(NOTE_EXIST_MESSAGE);
             }
+            isEditTitle = true;
+            oldNoteTitle = oldNote.getTitle();
             oldNote.setTitle(newNote.getTitle());
         }
 
@@ -109,6 +117,17 @@ public class EditNoteCommand extends Command {
         if (isInput) {
             content.addAll(inputContent());
             oldNote.setContent(content);
+        }
+
+        try {
+            storageManager.saveAllNoteDetails(false);
+            storageManager.saveNoteContent(oldNote, false);
+
+            if (isEditTitle) {
+                storageManager.deleteNoteContentFile(oldNoteTitle, false);
+            }
+        } catch (IOException | SystemException exception) {
+            return Formatter.formatString(FILE_WRITE_UNSUCCESSFUL_MESSAGE);
         }
 
         notebook.setNotes(index, oldNote);

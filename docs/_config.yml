@@ -5,6 +5,7 @@ header_pages:
   - AboutUs.md
   - UserGuide.md
   - DeveloperGuide.md
+  - DevelopmentPractices.md
 
 markdown: kramdown
 

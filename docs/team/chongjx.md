@@ -37,11 +37,23 @@ NotUS is a quick and simple, Command Line Interface (CLI) based, note-taking app
 
 *Contributions to User Guide*
 
-[Section 3.11 Create Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#create-t), [Section 3.12 List Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#list-t), [Section 3.13 Tag/Untag Notes](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#tag-n), [Section 3.14 Tag/Untag Events](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#tag-e), [Section 3.15 Delete Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#delete-t)
+[Section 3.11 Create Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#create-t) <br>
+[Section 3.12 List Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#list-t) <br>
+[Section 3.13 Tag/Untag Notes](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#tag-n) <br>
+[Section 3.14 Tag/Untag Events](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#tag-e) <br>
+[Section 3.15 Delete Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/UserGuide.html#delete-t) <br>
 
 *Contributions to Developer Guide*
 
-[Section 2.1 Architecture Overview](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#overview), [Section 2.3 Parser & ParserManager](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#parserManager), [Section 2.4 Commands](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#commands) (Class diagram of Command Class, Figure 6), [Section 2.7 Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#tag), [Section 2.9 User Interface](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#ui), [Section 2.10 SystemException](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#exception), [Section 2.11 Usage of External Libraries](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#color), [Section 8.1 List of ParseCommand Classes](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#parseXYZCommands), [Section 8.2 List of Command Classes](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#XYZCommands)
+[Section 2.1 Architecture Overview](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#overview) <br>
+[Section 2.3 Parser & ParserManager](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#parserManager) <br>
+[Section 2.4 Commands](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#commands) (Class diagram of Command Class, Figure 6) <br>
+[Section 2.7 Tags](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#tag) <br>
+[Section 2.9 User Interface](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#ui) <br>
+[Section 2.10 SystemException](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#exception) <br>
+[Section 2.11 Usage of External Libraries](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#color) <br>
+[Section 8.1 List of ParseCommand Classes](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#parseXYZCommands) <br>
+[Section 8.2 List of Command Classes](https://ay2021s1-cs2113-t13-1.github.io/tp/DeveloperGuide.html#XYZCommands) <br>
 
 *Community*
 

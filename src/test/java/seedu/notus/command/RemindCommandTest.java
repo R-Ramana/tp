@@ -15,10 +15,11 @@ import java.util.HashMap;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static seedu.notus.util.CommandMessage.REMINDERS_MESSAGE;
 
 //@@author brandonywl
 class RemindCommandTest {
-    private static final String COMMAND_SUCCESSFUL_MESSAGE = "No reminders today!";
+    private static final String COMMAND_SUCCESSFUL_MESSAGE = REMINDERS_MESSAGE;
     private static final String TEST_TITLE_1 = "CS2113 Tutorial";
     private static final String TEST_TITLE_2 = "CS2113 Lecture";
     private static final String TEST_TITLE_3 = "CS2113 Meeting";

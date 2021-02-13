@@ -137,8 +137,6 @@ public class Formatter {
             ArrayList<Event> dailyEvents = timetable.get(day);
             for (Event event : dailyEvents) {
                 ArrayList<String> tempResults = formatEvent(event);
-                String title = tempResults.get(0).concat(event.getTagsName());
-                tempResults.set(0, title);
                 results.addAll(tempResults);
                 results.add(" ");
             }
@@ -194,7 +192,7 @@ public class Formatter {
         int i = 1;
         for (Event event : events) {
             eventStringRepresentation = formatEvent(event);
-            String title = String.format("%d. %s %s", i++, eventStringRepresentation.get(0), event.getTagsName());
+            String title = String.format("%d. %s", i++, eventStringRepresentation.get(0));
             eventStringRepresentation.set(0, title);
             eventsStrings.addAll(eventStringRepresentation);
         }
@@ -221,7 +219,7 @@ public class Formatter {
             reminderString = reminderString.concat(" " + reminder);
         }
 
-        result.add("Event: " + event.getTitle());
+        result.add("Event: " + event.getTitle() + " " + event.getTagsName());
         result.add("Date: " + event.getStartDate().toString()
                 + EMPTY_SPACE.repeat(4) + "Start: " + event.getStartTime().toString()
                 + EMPTY_SPACE.repeat(4) + "End: " + event.getEndTime().toString());
@@ -285,7 +283,7 @@ public class Formatter {
     public static ArrayList<String> formatReminder(Reminder reminder) {
         Event event = reminder.getEvent();
         ArrayList<String> result = new ArrayList<>();
-        result.add("Event: " + event.getTitle());
+        result.add("Event: " + event.getTitle() + " " + event.getTagsName());
         result.add("Date: " + event.getStartDate().toString()
                 + EMPTY_SPACE.repeat(4) + "Time: " + event.getStartTime().toString());
         return result;

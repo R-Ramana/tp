@@ -24,7 +24,6 @@ public class Event extends TaggableObject implements Comparable<Event> {
     private Boolean isToRemind;
     private Boolean isRecurring;
     private HashMap<String, ArrayList<Integer>> reminderPeriods = new HashMap<>();
-    private ArrayList<Tag> tags = new ArrayList<>();
 
 
     /**

@@ -10,6 +10,8 @@ import seedu.notus.data.exception.SystemException.ExceptionType;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static seedu.notus.storage.StorageManager.LOGS_DIR;
+
 /**
  * Represents a parser object specifically to parse message for FindCommand.
  */
@@ -28,7 +30,7 @@ public class ParseFindCommand extends Parser {
     @Override
     public Command parse() throws SystemException {
         Logger loggerFind = Logger.getLogger("ParserPrepareFind");
-        setupLogger(loggerFind, "FindCommandParser.log");
+        setupLogger(loggerFind, LOGS_DIR + "/FindCommandParser.log");
 
         try {
             userMessage = checkBlank(userMessage, ExceptionType.EXCEPTION_MISSING_KEYWORD);
